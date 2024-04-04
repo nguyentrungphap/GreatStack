@@ -1,0 +1,59 @@
+.programContainer {
+  margin: 80px 10%;
+  text-align: center;
+  span {
+    text-align: center;
+    color: #212ea0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 32px;
+    color: #000f38;
+    margin-top: 5px;
+    text-transform: none;
+  }
+}
+.content {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  .program {
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .hoverProgram {
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #000f984d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      padding-top: 70%;
+      transition: 0.4s;
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 0;
+      }
+    }
+  }
+  .program:hover .hoverProgram {
+    opacity: 1;
+    padding: 0;
+  }
+}
